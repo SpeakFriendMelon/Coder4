@@ -53,7 +53,7 @@ footer {
   display: flex; }
 
 .header__contenedor {
-  background-image: url(./img/gandalf.jpg);
+  background-image: url(../img/gandalf.jpg);
   background-position-x: center center;
   background-size: cover;
   height: 100vh;
