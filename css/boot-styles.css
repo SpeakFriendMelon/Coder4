@@ -107,6 +107,7 @@ h1 {
   border: 0.5px solid white;
   border-radius: 0 0 7px 7px;
   margin: 0.3rem;
+  margin-bottom: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
 
 .card:hover {
