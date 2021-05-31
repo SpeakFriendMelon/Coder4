@@ -373,7 +373,7 @@ footer {
 /**MEDIA**/
 @media only screen and (max-width: 680px) {
   .header__contenedor {
-    background-image: url(../img/gandalf-mobile.png);
+    background-image: url(./img/gandalf-mobile.png);
     background-position-y: center;
     background-size: cover;
     height: 100vh;
@@ -388,7 +388,7 @@ footer {
 
 @media only screen and (max-width: 1024px) {
   .header__contenedor {
-    background-image: url(../img/gandalf-mobile.png);
+    background-image: url(./img/gandalf-mobile.png);
     background-position-y: center;
     background-size: cover;
     height: 60vh;
