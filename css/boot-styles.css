@@ -157,17 +157,7 @@ footer {
 .entradas__form hr{
   color:#c90202;
 }
-.entradas__form button{
-  width: 35%;
-  height: 3rem;
-  margin-top: 2rem;
-  font-size: 0.95em;
-}
 
-.entradas__form button:hover{
-  background-color: #6bff15;
-  color: black;
-}
 
 
 
@@ -217,10 +207,7 @@ footer {
     font-size: 0.95em;
   }
   
-  .entradas__form button:hover{
-    background-color: #6bff15;
-    color: black;
-  }
+  
 
   
 }
