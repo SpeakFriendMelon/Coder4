@@ -17,7 +17,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/boot-styles.css">
   <link rel="stylesheet" href="css/estilosass.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
  
@@ -71,34 +71,34 @@
 
     <section>
       <div class="container-fluid">
-        <h1 class="titulo__centrado">LINEUP</h1>
+        <h1 class="titulo__centrado titulo__centrado--margin">LINEUP</h1>
       </div>
       
     </section>
-    <main container-fluid>
-      <div class="container-fluid datatable-container">
+    <main>
+      <div class="datatable-container">
         <div class="header-tools">
           <div class="tools">
             <ul>
             <li> <span><input type="checkbox"></span> </li>
             <li>
               <button>
-                  <i class="material-icons">add_circle</i>
-              </button>
-            </li>
-            <li>
-              <button>
-                  <i class="material-icons">edit</i>
-              </button>
-            </li>
-            <li>
-              <button>
-                  <i class="material-icons">delete</i>
-              </button>
-            </li>
-            <li>
-              <button>
                   <i class="material-icons">share</i>
+              </button>
+            </li>
+            <li>
+              <button>
+                  <i class="material-icons">info</i>
+              </button>
+            </li>
+            <li>
+              <button>
+                  <i class="material-icons">favorite_border</i>
+              </button>
+            </li>
+            <li>
+              <button>
+                  <i class="material-icons">search</i>
               </button>
             </li>
             </ul>
@@ -113,12 +113,11 @@
           <thead>
             <tr>
               <th></th>
-              <th>Status</th>
+              <th>Fecha</th>
               <th>Artista</th> 
               <th>Temática</th>
               <th>Escenario</th>
-              <th>Fecha</th>
-              <th>Horario</th>
+              
             </tr>
           </thead>
           
@@ -129,8 +128,7 @@
               <td>Stephan Bodzin</td>
               <td>Humanos</td>
               <td>Minas Tirith</td>
-              <td>10/05/2021</td>
-              <td>22.30hs</td>
+              
             </tr>
 
             <tr>
@@ -139,8 +137,7 @@
               <td>Sébastien Léger</td>
               <td>Goblins</td>
               <td>Mines of Moria</td>
-              <td>11/05/2021</td>
-              <td>23:30hs</td>
+              
             </tr>
 
             <tr>
@@ -149,8 +146,7 @@
               <td>Maceo Plex</td>
               <td>Orcos</td>
               <td>Minas Morgul</td>
-              <td>12/05/2021</td>
-              <td>23:00hs</td>
+              
             </tr>
 
             <tr>
@@ -159,8 +155,7 @@
               <td>Recondite</td>
               <td>Hobbits</td>
               <td>La Comarca</td>
-              <td>13/05/2021</td>
-              <td>22:15hs</td>
+              
             </tr>
 
             <tr>
@@ -169,8 +164,7 @@
               <td>Eric Prydz</td>
               <td>Elfos</td>
               <td>Rivendell</td>
-              <td>14/05/2021</td>
-              <td>00:00hs</td>
+              
             </tr>
 
             <tr>
@@ -178,9 +172,8 @@
               <td> <span class="away"></span> </td>
               <td>ARBAT</td>
               <td>Criaturas</td>
-              <td>Bosque de Fangorn</td>
-              <td>15/05/2021</td>
-              <td>22:00hs</td>
+              <td>Fangorn</td>
+              
             </tr>
 
             <tr>
@@ -189,8 +182,7 @@
               <td>DR. KUCHO!</td>
               <td>Mix</td>
               <td>Helm's Deep</td>
-              <td>16/05/2021</td>
-              <td>22:30hs</td>
+              
             </tr>
 
             <tr>
@@ -199,8 +191,7 @@
               <td>Boris Brejcha</td>
               <td>Enanos</td>
               <td>Erebor</td>
-              <td>17/05/2021</td>
-              <td>21:30hs</td>
+              
             </tr>
 
             <tr>
@@ -209,8 +200,7 @@
               <td>Marc Ramboy</td>
               <td>Mix</td>
               <td>Osgiliath</td>
-              <td>18/05/2021</td>
-              <td>23:30hs</td>
+              
             </tr>
 
             <tr>
@@ -219,8 +209,7 @@
               <td>Patrice Baumel</td>
               <td>Mix</td>
               <td>The Black Gate</td>
-              <td>19/05/2021</td>
-              <td>00:00hs</td>
+              
             </tr>
           </tbody>
 
@@ -250,43 +239,51 @@
         </div>
 
       </div>
-      
+      <article class="container">
+        <h3 class="titulo__condiciones">Condiciones legales de la entrada</h3>
+        <ul>
+          <li>Cada entrada, lleva asociada un código de barras y localizador que hace que cada entrada sea diferente y única, independientemente de que una única persona haya comprado varias entradas y estén todas a su nombre. El nombre impreso en la entrada sirve para identificar al comprador, no al portador de la entrada.</li>
+          <li>El portador de la entrada asume toda responsabilidad en caso de que dicha entrada se presente por duplicado, fotocopiada o falsificada, perdiendo todos los derechos que ésta le otorga para poder acceder al recinto.</li>
+          <li>Solo se considerará válida la primera entrada presentada, y en ningún caso se permitirá entrar a quienes posteriormente lo intenten con la misma entrada duplicada.</li>
+          <li>El portador se obliga a respetar las normas de la Organización.</li>
+        </ul>
+
+
+
+      </article>
     </main>
 
     <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
       <div class="container p-4 pb-0">
-        <!-- Section: Social media -->
+        <!-- Sections -->
         <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="#"></i
+          <!-- Home -->
+          <a class="btn btn-outline-light btn-floating m-1" href="index.html" role="button"
+            ><i class="#">HOME</i
           ></a>
     
-          <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="#"></i
+          <!-- Entradas -->
+          <a class="btn btn-outline-light btn-floating m-1" href="entradas.html" role="button"
+            ><i class="#">ENTRADAS</i
           ></a>
     
-          <!-- Google -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="#"></i
+          <!-- LINEUP -->
+          <a class="btn btn-outline-light btn-floating m-1" href="lineup.html" role="button"
+            ><i class="#">LINEUP</i
           ></a>
     
-          <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="#"></i
+          <!-- Merch -->
+          <a class="btn btn-outline-light btn-floating m-1" href="merch.html" role="button"
+            ><i class="#">MERCH</i
           ></a>
     
-          <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="#"></i
+          <!-- Nosotros -->
+          <a class="btn btn-outline-light btn-floating m-1" href="nosotros.html" role="button"
+            ><i class="#">NOSOTROS</i
           ></a>
     
-          <!-- Github -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="#"></i
-          ></a>
+          
         </section>
         <!-- Section: Social media -->
       </div>

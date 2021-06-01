@@ -20,7 +20,8 @@ html {
 :root {
   --primary-color: white;
   --secondary-color: rgb(61, 68, 73);
-  --highlight-color: #2d99d8;
+  --third-color: rgb(10, 197, 166);
+  --highlight-color: #0b82b1;
   --dt-status-available-color: greenyellow;
   --dt-status-away-color: lightsalmon;
   --dt-status-offline-color: lightgray;
@@ -28,8 +29,8 @@ html {
   --dt-padding-s: 6px;
   --dt-padding-xs: 2px;
   --dt-border-radius: 3px;
-  --dt-background-color-cointainer: #2a3338;
-  --dt-border-color: var(--secondary-color);
+  --dt-background-color-cointainer: #3b5664;
+  --dt-border-color: var(--third-color);
   --dt-bg-color:var(--secondary-color);
   --dt-text-color:var(--highlight-color);
   --dt-text-color:var(--primary-color);
@@ -44,6 +45,7 @@ html {
 
 .material-icons {
   font-size: 16px; }
+
 
 .datatable-container {
   font-family: 'Noto Sans', sans-serif;
@@ -61,7 +63,7 @@ html {
     .datatable-container .header-tools .search {
       width: 30%; }
       .datatable-container .header-tools .search .search-input {
-        width: 100%;
+        width: 70%;
         background-color: var(--dt-input-background-color);
         display: block;
         box-sizing: border-box;
@@ -92,6 +94,7 @@ html {
               background: var(--dt-bg-active-button);
               color: var(--dt-text-color-active-button); }
   .datatable-container .footer-tools {
+    background-color: var(--dt-bg-color);
     padding: var(--dt-padding);
     display: flex;
     align-items: baseline; }
@@ -147,27 +150,28 @@ html {
   text-align: left;
   border-bottom: solid 1px var(--dt-border-color); }
 
-.datatable-container .datatable tbody tr:nth-child(even) {
+.datatable-container .datatable tbody tr:nth-child(odd) {
   background-color: var(--dt-even-row-color); }
 
 .datatable-container .datatable tbody tr:hover {
   background-color: var(--dt-hover-cell-color); }
 
 .datatable-container .datatable tbody tr .available::after {
-  content: 'Disponible';
+  content: 'Disponible 10/03';
   color: var(--dt-status-available-color); }
 
 .datatable-container .datatable tbody tr .away::after {
-  content: 'Últimas entradas';
+  content: 'Agotando 11/03';
   color: var(--dt-status-away-color); }
 
 .datatable-container .datatable tbody tr .offline::after {
-  content: 'Agotado';
+  content: '¡Agotado! 12/03';
   color: var(--dt-status-offline-color); }
 
 .datatable-container .datatable tbody tr .available::before,
 .datatable-container .datatable tbody tr .away::before,
 .datatable-container .datatable tbody tr .offline::before {
+  font-size: 0.95em;
   content: '';
   display: inline-block;
   width: 10px;
@@ -185,9 +189,10 @@ html {
 .datatable-container .datatable tbody tr .offline::before {
   background-color: var(--dt-status-offline-color); }
 
-@media only screen and (max-width: 680px) {
-  .datatable-container {
-    width: 100%; } }
+
+
+  
+
 
 
 
@@ -196,8 +201,14 @@ html {
 .titulo__centrado--margin{
   margin-bottom: 3rem;
   margin-top: 3rem;
+  font-size: 1.7em;
 }
+.titulo__condiciones{
+  margin-bottom: 1.5rem;
+  margin-top: 5rem;
+  font-size: 1.4em;
 
+}
 .titulo__carousel{
   color: white;
   font-size: 2em;
@@ -228,6 +239,15 @@ html {
   justify-content: center;
   width: 80%;
 }
+/** TITLOS Y SUBTITULOS**/
+.titulo__vestuario{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-size: 1.4em;
+
+}
 
 .subtitulo__vestuario{
   display: flex;
@@ -235,6 +255,8 @@ html {
   margin: 4rem 0 2rem 2rem;
   font-size: 1.3em;
 }
+
+/**MERCH CARDS**/
 
 .merch-cards{
   display: flex;
@@ -331,3 +353,54 @@ html {
   align-items: center;
   margin-top: 4rem;
 }
+
+/**NOSOTROS**/
+
+.contenedor__nosotros{
+  display: flex;
+}
+
+.contenedor__nosotros > div {
+  width: 50%;
+  padding: 4rem;
+}
+.shadow__effect{
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.contenedor__nosotros span {
+  color: red;
+}
+@media only screen and (max-width: 1024px) {
+
+  .datatable-container{
+    width: auto;
+  }
+  .img__carousel {  
+    height: 250px;
+  }
+
+
+  
+  .merch-cards {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    
+  }
+  .contenedor__nosotros{
+    display: block;
+  }
+  
+  .contenedor__nosotros > div {
+    width: 100%;
+    padding: 2rem;
+  }
+  .contenedor__nosotros > div img {
+    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  }

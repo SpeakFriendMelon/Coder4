@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/aniron');
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -119,8 +121,8 @@ footer {
 
 /*NOSOTROS*/
 .nosotros__titulo {
-  font-weight: 500;
-  font-size: 1.5em;
+  font-family: 'Aniron', sans-serif;
+  font-size: 1.9em;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -247,6 +249,8 @@ footer {
   background-color: #53b44a;
 }
 
+
+
 /**UTILITY-BRO**/
 .escalado-card {
   margin-bottom: 2.7rem;
@@ -256,7 +260,7 @@ footer {
 .titulo__ofertas {
   display: flex;
   justify-content: center;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-top: 2rem;
   margin-bottom: 1.2rem;
 }
@@ -383,6 +387,7 @@ footer {
 
   .logo {
     padding: 10px;
+    margin-top: -2rem;
   }
 }
 
@@ -400,8 +405,10 @@ footer {
     font-weight: 600;
   }
   .nosotros__titulo {
-    font-size: 1.8em;
+    font-size: 1.5em;
+    font-weight: 700;
   }
+  
   .main__contenedor__anuncios__display {
     width: 100%;
     display: flex;
@@ -421,8 +428,11 @@ footer {
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
   }
-
-  
+  .ver-todas{
+    display: flex;
+    justify-content: center;
+  }
+    
 }
 
 /*ANIMACION PARA DIVS*/
